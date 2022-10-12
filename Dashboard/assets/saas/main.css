@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+a {
+  text-decoration: none;
+  color: #339999;
+}
+
+header nav {
+  background: #fff;
+  box-shadow: 0px 0px 5px rgba(68, 68, 68, 0.2666666667);
+}
+header nav a.navbar-band img {
+  height: 40px;
+}
+header nav form.search-form {
+  width: 300px;
+  margin-right: 50px;
+  position: relative;
+}
+header nav form.search-form input {
+  border-radius: 50px;
+}
+header nav form.search-form button.search-btn {
+  border-radius: 50px;
+  padding: 7px 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: var(--bs-green);
+  border: 0;
+  color: #fff;
+}
+header nav ul.action-menu.nav-item.nav-link {
+  margin: 0px;
+  font-size: 18px;
+}
+
+section.slider {
+  background: rgba(247, 247, 247, 0.968627451);
+  padding-top: 40px;
+  right: 600px;
+}
+section.slider .slider-text h2 {
+  font-size: 60px;
+  font-weight: 600;
+}
+section.slider .slider-text h2 span.lighten {
+  color: #66cc33;
+}
+section.slider .slider-text p {
+  font-size: 16px;
+  color: #339999;
+}
+section.slider .slider-text a.btn-order-now {
+  font-size: 20px;
+  font-size: 20px;
+  color: #65ffa2;
+  background: #0b8181;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+section.slider .slider-text a.btn-order-now:hover {
+  box-shadow: 2px 2px 5px rgba(6, 245, 86, 0.969);
+}
+section.slider .col-lg-6.slider-image {
+  height: 380px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  /* border: #141619; */
+}
+
+section.category-product {
+  padding: 60px 0px;
+}
+section.category-product .catd {
+  background: rgba(252, 253, 251, 0.0745098039);
+}
+section.category-product .card-body {
+  text-align: center;
+}
+section.category-product .card-body img {
+  height: 190px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: 0.6s;
+}
+section.category-product .card-body h4 {
+  font-size: 25px;
+  text-shadow: 1px 1px 1px rgba(124, 251, 140, 0.2666666667);
+  margin: 20px 0px;
+}
+section.category-product .card-body a.details-btn {
+  background: var(--bs-success);
+  padding: 6px 30px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+section.category-product:hover .card-body img {
+  transform: scale(1.2);
+}
+
+section.category {
+  padding: 20px 0px;
+}
+section.category .item {
+  background: rgb(234, 241, 169);
+  padding: 20px;
+}
+section.category .item .text {
+  width: 209px;
+}
+section.category .item .text h2 {
+  font-size: 36px;
+  line-height: 51px;
+  text-shadow: 1px 1px 1px rgba(68, 68, 68, 0.2666666667);
+  text-align: left;
+}
+section.category .item .text a.order-now {
+  background: #198754;
+  padding: 8px 29px;
+  border-radius: 50px;
+  color: #fff;
+}
+section.category .item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+}
+
+section.product {
+  padding: 33px 0px;
+  background: rgba(247, 247, 247, 0.968627451);
+}
+section.product .card .card-body img {
+  height: 160px;
+  transition: 0.6s;
+}
+section.product .card .card-body h2.product_name {
+  font-size: 18px;
+  padding: 15px 0px;
+}
+section.product .card .card-body h2.price {
+  font-size: 24px;
+  padding: 10px 0px;
+}
+section.product .card .card-body a.add-to-cart-btn {
+  border: 1px solid #198754;
+  padding: 5px 23px;
+  color: #198754;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.6s;
+}
+section.product .card .card-body a.add-to-cart-btn:hover {
+  background: var(--bs-success);
+  color: #fff;
+}
+section.product .card:hover .card-body img {
+  transform: scale(1.2);
+}/*# sourceMappingURL=main.css.map */
