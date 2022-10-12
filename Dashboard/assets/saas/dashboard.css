@@ -1,0 +1,187 @@
+:root {
+  --main-bg-color: #009d63;
+  --main-text-color: #009d63;
+  --second-text-color: #bbbec5;
+  --second-bg-color: #91dd83;
+}
+
+.primary-text {
+  color: var(--main-text-color);
+}
+
+.second-text {
+  color: var(--second-text-color);
+}
+
+.primary-bg {
+  background-color: var(--second-bg-color);
+}
+
+.rounded-full {
+  border-radius: 100%;
+}
+
+#wrapper {
+  overflow-x: hidden;
+  background-image: linear-gradient(to right, #baf3d7, #c2f5de, #cbf7e4, #d4f8ea, #ddfaef);
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#menu-toggle {
+  cursor: pointer;
+}
+
+.list-group-item {
+  border: none;
+  padding: 20px 30px;
+}
+
+.list-group-item.active {
+  background-color: transparent;
+  color: var(--main-text-color);
+  font-weight: bold;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+.wrapper {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 20px;
+  margin: 5px auto;
+  box-shadow: 6px 9px 2px rgba(0, 0, 0, 0.13);
+  padding: 45px;
+  margin-left: inherit;
+}
+.wrapper .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #198754;
+  text-transform: uppercase;
+  text-align: center;
+}
+.wrapper .form {
+  width: 100%;
+}
+.wrapper .form .inputfield {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.wrapper .form .inputfield .inputfield label {
+  width: 200px;
+  color: #757575;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.wrapper .form .inputfield .inputfield label .inputfield p {
+  font-size: 14px;
+  color: #757575;
+}
+.wrapper .form .inputfield .inputfield label .textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+.wrapper .form .inputfield .inputfield label .textarea .textarea {
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+.wrapper .form .inputfield .inputfield label .textarea .textarea .custom_select {
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+.wrapper .form .inputfield .inputfield label .textarea .textarea .custom_select:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+.wrapper .form .inputfield .inputfield label .textarea .textarea .custom_select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .wrapper .form .inputfield .wrapper .form .inputfield .wrapper .form .inputfield .wrapper .form .inputfield .wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus {
+  border: 1px solid #fec107;
+}
+
+.wrapper .form .wrapper .form .inputfield .btn {
+  width: 40%;
+  padding: 12px 10px;
+  font-size: 22px;
+  font-weight: 600;
+  border: 0px;
+  background: #198754;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 33px;
+  outline: none;
+}
+@media (max-width: 420px) {
+  .wrapper .form .wrapper .form .inputfield .btn .wrapper .form .inputfield {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .wrapper .form .inputfield .btn .wrapper .form .inputfield label {
+    margin-bottom: 5px;
+  }
+  .wrapper .form .wrapper .form .inputfield .btn .wrapper .form .inputfield.terms {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=dashboard.css.map */
