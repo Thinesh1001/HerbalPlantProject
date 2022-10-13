@@ -10,5 +10,6 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/saas/main.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
