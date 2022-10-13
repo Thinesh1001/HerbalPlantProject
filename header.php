@@ -43,10 +43,10 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="bi bi-person"></i>
+                                <?php if(isset($_SESSION['user'])){ echo $_SESSION['user'];} ?>
                             </a>
                             <ul class="dropdown-menu border-0 shadow-lg" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Login</a></li>
-                                <li><a class="dropdown-item" href="#">Register</a></li>
+                                  <?php if(isset($_SESSION['user'])){ echo '<li><a class="dropdown-item" href="logout.php">Log Out</a></li>';}else{ echo '<li><a class="dropdown-item" href="userLoginPage.php">Log In</a></li><li><a class="dropdown-item" href="userRegisterPage.php">Register</a></li>';} ?> 
                             </ul>
                         </li>
                     </ul>
