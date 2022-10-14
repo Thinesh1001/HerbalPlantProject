@@ -30,5 +30,5 @@
     <input type="number" name="product_stock_available" id="product_stock_available" placeholder="Enter Product Stock Available" required>
     <label for="product_stock_value">Stock Value</label>
     <input type="number" name="product_stock_value" id="product_stock_value" placeholder="Enter Product Stock Value" required>
-    <button type="submit" value="submit" name="submit">submit</button>
+    <button type="submit" x>submit</button>
 </form>

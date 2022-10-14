@@ -13,7 +13,7 @@
                             <p>
                                 Organically grown herbs can be obtained here
                             </p>
-                            <a href="" class="btn-order-now">Order</a>
+                            <a href="allProducts.php" class="btn-order-now">Order</a>
                         </div>
                         <div class="col-lg-6 slider-image">
                             <img src="assets/images/slider4.png" class="d-block w-100" alt="">
@@ -30,7 +30,7 @@
                             <p>
                                 Organically grown herbs can be obtained here
                             </p>
-                            <a href="" class="btn-order-now">Order</a>
+                            <a href="allProducts.php" class="btn-order-now">Order</a>
                         </div>
                         <div class="col-lg-6 slider-image">
                             <img src="assets/images/slider5.png" class="d-block w-100" alt="">
@@ -47,7 +47,7 @@
                             <p>
                                 Organically grown herbs can be obtained here
                             </p>
-                            <a href="" class="btn-order-now">Order</a>
+                            <a href="allProducts.php" class="btn-order-now">Order</a>
                         </div>
                         <div class="col-lg-6 slider-image">
                             <img src="assets/images/slider6.png" class="d-block w-100" alt="">

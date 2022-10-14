@@ -20,8 +20,8 @@
                                     <i class="fas fa-user me-2"></i>Admin
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Profile</a></li>                            
-                                    <li><a class="dropdown-item" href="loginPage.php">Logout</a></li>
+                                    <li><a class="dropdown-item" href="adminProfile.php">Profile</a></li>                            
+                                    <li><a class="dropdown-item" href="AdminLoginPage.php">Logout</a></li>
                                 </ul>
                             </li>
                         </ul>

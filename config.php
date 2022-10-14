@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-define('SITEURL', 'http://localhost/herbal/HerbalPlantProject/');
+define('SITEURL', 'http://localhost/HerbalPlantProject2/');
 define('LOCALHOST', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
