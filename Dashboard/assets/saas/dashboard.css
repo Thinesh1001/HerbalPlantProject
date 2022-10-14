@@ -2,7 +2,7 @@
   --main-bg-color: #009d63;
   --main-text-color: #009d63;
   --second-text-color: #bbbec5;
-  --second-bg-color: #91dd83;
+  --second-bg-color: #c1efde;
 }
 
 .primary-text {
@@ -14,6 +14,10 @@
 }
 
 .primary-bg {
+  background-color: var(--main-bg-color);
+}
+
+.secondary-bg {
   background-color: var(--second-bg-color);
 }
 
@@ -86,6 +90,7 @@
   padding: 45px;
   margin-left: inherit;
 }
+
 .wrapper .title {
   font-size: 24px;
   font-weight: 700;
@@ -94,25 +99,26 @@
   text-transform: uppercase;
   text-align: center;
 }
+
 .wrapper .form {
   width: 100%;
 }
+
 .wrapper .form .inputfield {
   margin-bottom: 15px;
   display: flex;
   align-items: center;
 }
-.wrapper .form .inputfield .inputfield label {
+
+.wrapper .form .inputfield label {
   width: 200px;
   color: #757575;
   margin-right: 10px;
   font-size: 14px;
 }
-.wrapper .form .inputfield .inputfield label .inputfield p {
-  font-size: 14px;
-  color: #757575;
-}
-.wrapper .form .inputfield .inputfield label .textarea {
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea {
   width: 100%;
   outline: none;
   border: 1px solid #d5dbd9;
@@ -121,17 +127,20 @@
   border-radius: 3px;
   transition: all 0.3s ease;
 }
-.wrapper .form .inputfield .inputfield label .textarea .textarea {
+
+.wrapper .form .inputfield .textarea {
   width: 100%;
   height: 125px;
   resize: none;
 }
-.wrapper .form .inputfield .inputfield label .textarea .textarea .custom_select {
+
+.wrapper .form .inputfield .custom_select {
   position: relative;
   width: 100%;
   height: 37px;
 }
-.wrapper .form .inputfield .inputfield label .textarea .textarea .custom_select:before {
+
+.wrapper .form .inputfield .custom_select:before {
   content: "";
   position: absolute;
   top: 12px;
@@ -140,7 +149,8 @@
   border-color: #d5dbd9 transparent transparent transparent;
   pointer-events: none;
 }
-.wrapper .form .inputfield .inputfield label .textarea .textarea .custom_select select {
+
+.wrapper .form .inputfield .custom_select select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -154,14 +164,18 @@
   border-radius: 3px;
 }
 
-.wrapper .form .inputfield .input,
-.wrapper .form .inputfield .wrapper .form .inputfield .wrapper .form .inputfield .wrapper .form .inputfield .wrapper .form .inputfield .wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .input:focus,
 .wrapper .form .inputfield .textarea:focus,
 .wrapper .form .inputfield .custom_select select:focus {
   border: 1px solid #fec107;
 }
 
-.wrapper .form .wrapper .form .inputfield .btn {
+.wrapper .form .inputfield p {
+  font-size: 14px;
+  color: #757575;
+}
+
+.wrapper .form .inputfield .btn {
   width: 40%;
   padding: 12px 10px;
   font-size: 22px;
@@ -173,15 +187,16 @@
   border-radius: 33px;
   outline: none;
 }
+
 @media (max-width: 420px) {
-  .wrapper .form .wrapper .form .inputfield .btn .wrapper .form .inputfield {
+  .wrapper .form .inputfield .btn .wrapper .form .inputfield {
     flex-direction: column;
     align-items: flex-start;
   }
-  .wrapper .form .wrapper .form .inputfield .btn .wrapper .form .inputfield label {
+  .wrapper .form .inputfield .btn .wrapper .form .inputfield label {
     margin-bottom: 5px;
   }
-  .wrapper .form .wrapper .form .inputfield .btn .wrapper .form .inputfield.terms {
+  .wrapper .form .inputfield .btn .wrapper .form .inputfield.terms {
     flex-direction: row;
   }
-}/*# sourceMappingURL=dashboard.css.map */
+} /*# sourceMappingURL=dashboard.css.map *//*# sourceMappingURL=dashboard.css.map */

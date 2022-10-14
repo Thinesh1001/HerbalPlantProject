@@ -22,13 +22,13 @@
                 <img src="assets/images/Logo1.png" style="height:40px;" alt="">Herbs Lanka
             </div>
             <div class="list-group list-group-flush my-3">
-                <a href="supplierProfile.php" class="list-group-item list-group-item-action bg-transparent second-text active"><i
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active"><i
                         class="fas fa-tachometer-alt me-2"></i>Dashboard</a>            
-                <a href="suplierEditProduct.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fa fa-edit me-2"></i>Edit Products</a>                 
-                <a href="suplierEditProduct.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fa fa-cogs me-2"></i>Other</a>               
-                <a href="supplierLoginPage.php" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
+                <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
                         class="fas fa-power-off me-2"></i>Logout</a>
             </div>
         </div>
@@ -39,21 +39,6 @@
                         <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
                         <h2 class="fs-2 m-0">Supplier Dashboard</h2>
                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -70,7 +55,7 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="supplierProfile.php">Profile</a></li>                            
-                                    <li><a class="dropdown-item" href="supplierLoginPage.php>Logout</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -78,7 +63,31 @@
                 </nav>
             </div>
 
-
+    <div class="register">
+        <div class="container">
+            <div class="form-head">
+                Supplier Details
+            </div>
+            <form class="registrationForm" action="">
+                <div class="reform-control">
+                    <label class="re-label" for="">Supplier Name</label>
+                    <label class="re-label" for="">Username</label>                
+                </div>
+                <div class="reform-control">                    
+                    <label class="re-label" for="">Supplier Description</label>
+                    <label class="re-label" for="">Username</label>                  
+                </div>
+                <div class="reform-control">
+                </div>
+                <div>
+                    <a href="supplier.ResetPwd.php">
+                    <p>Password Reset</p>
+                    </a>
+                </div>
+            
+            </form>
+        </div>
+    </div>
     
 
 

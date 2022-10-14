@@ -16,7 +16,7 @@
             <div class="col-md-6 col-lg-7 d-flex align-items-center">
               <div class="card-body p-4 p-lg-5 text-black">
 
-                <form>
+                <form action="" method="POST">
 
                   <div class="d-flex align-items-center mb-3 pb-1">
                     <i class="fas fa-user-cog fa-2x me-3" style="color: #ff6219;"></i>
@@ -26,31 +26,51 @@
                   <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Admin Log in Here</h5>
 
                   <div class="form-outline mb-4">
-                    <input type="text" id="form2Example17" class="form-control form-control-lg" />
+                    <input type="text" name="username" id="form2Example17" class="form-control form-control-lg" />
                     <label class="form-label">Username</label>
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input type="password" id="form2Example27" class="form-control form-control-lg" />
+                    <input type="password" name="password" id="form2Example27" class="form-control form-control-lg" />
                     <label class="form-label" for="form2Example27">Password</label>
                   </div>
 
                   <div class="pt-1 mb-4">
                     <button class="btn btn-dark btn-lg btn-block" style="border-radius: 50px;
-                      font-weight: 500;" type="button">   <a href="adminDashboard.php">Login</a>  </button>
+                      font-weight: 500;" type="submit" value="submit" name="submit">Login  </button>
                   </div>
 
                   <!-- <a class="small text-muted" href="#!">Forgot password?</a> -->
-                  <p class="mb-5 pb-lg-2" style="color: #393f81; font-size: 20px; font-weight: 600;">If your Supplier 
+                  <p class="mb-5 pb-lg-2" style="color:#393f81; font-size: 20px; font-weight: 600;">If your Supplier 
                       <button class="btn" style="background-color: mediumaquamarine;border-radius: 49px;
-                      font-weight: 900;"> <a style="color: #393f81;" href="supplierLoginPage.php"">Supplier Click Here</a> 
+                      font-weight: 900;"> <a style="color: #393f81;" href="supplierLoginPage.php">Supplier Click Here</a> 
                       </button>
                   </p>
                       
                   <!-- <a href="#!" class="small text-muted">Terms of use.</a>
                   <a href="#!" class="small text-muted">Privacy policy</a> -->
                 </form>
+                <?php 
+            if(isset($_POST['submit']))
+            {
+                $username=$_POST['username'];
+                $password=md5($_POST['password']);
+                $sql = "SELECT *FROM tbl_admin WHERE admin_name='$username' AND admin_pwd ='$password'";
+                $res=mysqli_query($conn,$sql);
+                $count = mysqli_num_rows($res);
+                if($count==1)
+                {   
 
+                    $_SESSION['admin'] = $username;
+                    $_SESSION['login']="<div class='text-center text-success'>Login Successful</div>";
+                    echo "<script>window.location.href='index1.php'</script>";
+                } 
+                else
+                {
+                    $_SESSION['login']="<div class='text-center text-danger'>Username or Password didnot match</div>";
+                    echo "<script>window.location.href='userLoginPage1.php'</script>";
+                }
+            }?>
               </div>
             </div>
           </div>
@@ -61,7 +81,7 @@
 </section>
     
            
-<php? include 'dashboardFooter.php'; ?>
+<?php include 'dashboardFooter.php'; ?>
        
 
     

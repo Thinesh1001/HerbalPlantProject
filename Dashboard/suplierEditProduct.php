@@ -15,7 +15,7 @@
 
 <body>
     
-    <div class="d-flex" id="wrapper">
+<div class="d-flex" id="wrapper">
         <!-- Sidebar -->
         <div class="bg-white" id="sidebar-wrapper">
             <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
@@ -31,29 +31,13 @@
                 <a href="supplierLoginPage.php" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
                         class="fas fa-power-off me-2"></i>Logout</a>
             </div>
-        </div>
-                    
+        </div>    
         <div id="page-content-wrapper">
                 <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
                     <div class="d-flex align-items-center">
                         <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
                         <h2 class="fs-2 m-0">Supplier Dashboard</h2>
                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -76,8 +60,38 @@
                         </ul>
                     </div>
                 </nav>
-            </div>
+        </div>
 
+            <div class="container-fluid px-4">
+                    <div class="row g-3 my-2">
+                    <div class="row my-5">
+                        <h3 class="fs-4 mb-3">Recent Orders</h3>
+                        <div class="col">
+                            <table class="table bg-white rounded shadow-sm  table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" width="50">ID</th>
+                                        <th scope="col">Product Name</th>
+                                        <th scope="col">Product Categoey</th>
+                                        <th scope="col">Update</th>
+                                        <th scope="col">Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mint</td>
+                                        <td>Plants</td>                                    
+                                        <th scope="col"><button class="btn" style="background:#198754; ">Edit</button></th>
+                                        <th scope="col"><button class ="btn" style="background:red;">Update</button></th>
+                                    </tr>                          
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div> 
+
+          
 
     
 

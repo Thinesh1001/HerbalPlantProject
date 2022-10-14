@@ -163,4 +163,54 @@ section.product .card .card-body a.add-to-cart-btn:hover {
 }
 section.product .card:hover .card-body img {
   transform: scale(1.2);
+}
+
+.register {
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+.register .container {
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+}
+.register .container .registrationForm {
+  padding-top: 20px;
+}
+.register .container .registrationForm .reform-control {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.register .container .registrationForm .reform-control .resubmit-btn {
+  border-radius: 50px;
+  align-content: center;
+  padding-bottom: 9px;
+  padding-top: 10px;
+  width: 100%;
+  background-color: #198754;
+  margin-bottom: 9px;
+}
+.register .container .registrationForm .reform-control .re-input {
+  border: 2px solid #0b8181;
+  border-radius: 20px;
+  display: block;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+.register .container .registrationForm .reform-control .re-label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.register .container .form-head {
+  padding-top: 20px;
+  font-weight: bold;
+  align-content: center;
+  text-align: center;
+  font-size: 20px;
 }/*# sourceMappingURL=main.css.map */

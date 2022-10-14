@@ -2,7 +2,11 @@
 <?php 
     include 'dasboardHead.php'; 
     include 'adminSlidebar.php'; 
-    include 'dashboardHeader.php'; 
+    include 'dashboardHeader.php';
+    if(!isset($_SESSION['admin'])){
+        header('LOCATION:'.SITEURL);
+        unset($_SESSION['admin']);
+        };  
 ?> 	      
       <div class="container-fluid px-4">
                     <div class="row g-3 my-2">
